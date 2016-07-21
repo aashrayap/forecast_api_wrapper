@@ -26,7 +26,7 @@ class WeatherForecast
     @response['list'].each do |day|
       high_temps<< day['temp']['max']
       low_temps<< day['temp']['min']
-  	end
+    end
     puts "The high temp and low temp for today are #{high_temps[0]}, #{low_temps[0]} degrees celcius respectively".blue
     puts "The high temp and low temp for tomorrow are #{high_temps[1]}, #{low_temps[1]} degrees celcius respectively".green
 
