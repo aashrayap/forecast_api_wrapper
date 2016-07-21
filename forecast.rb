@@ -16,8 +16,8 @@ class WeatherForecast
   end
 
   def request()
-  	request_uri= "http://api.openweathermap.org/data/2.5/forecast/daily?q=#{location}&mode=json&units=metric&cnt=#{number_days}&appid=#{API_KEY}"
-  	@response=HTTParty.get(request_uri)
+    request_uri= "http://api.openweathermap.org/data/2.5/forecast/daily?q=#{location}&mode=json&units=metric&cnt=#{number_days}&appid=#{API_KEY}"
+    @response=HTTParty.get(request_uri)
   end
 
   def temps
