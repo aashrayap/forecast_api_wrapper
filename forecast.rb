@@ -11,8 +11,8 @@ class WeatherForecast
 
   attr_accessor :location, :number_days
   def initialize(location='Calgary',number_days='5')
-  @location=location
-  @number_days=number_days
+    @location=location
+    @number_days=number_days
   end
 
   def request()
@@ -21,8 +21,8 @@ class WeatherForecast
   end
 
   def temps
-  	high_temps=[]
-  	low_temps=[]
+    high_temps=[]
+    low_temps=[]
   	@response['list'].each do |day|
   	  high_temps<< day['temp']['max']
   	  low_temps<< day['temp']['min']
